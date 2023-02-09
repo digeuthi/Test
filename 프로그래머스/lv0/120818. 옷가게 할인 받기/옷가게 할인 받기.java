@@ -8,7 +8,7 @@ class Solution {
         } else if(300000 > price && price >= 100000){
             answer = (int)(price * 0.95);
         } else {
-            answer = price ;
+            answer = price ; //조건 외의 값도 출력하게 해야됨.
         }
         return answer;
     }
