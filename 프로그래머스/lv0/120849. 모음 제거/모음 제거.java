@@ -1,6 +1,6 @@
 class Solution {
     public String solution(String my_string) {
-        String answer = my_string.replaceAll("[aeiou]", ""); //"[a,e,i,o,u]"로하니까 안되던데..?
+        String answer = my_string.replaceAll("[a,e,i,o,u]", ""); //"[a,e,i,o,u]"로하니까 안되던데..?
         // String answer = " ";
         // String[] odd = {"a","e","i","o","u"};
         // for(int i = 0 ; i < odd.length ; i ++){
