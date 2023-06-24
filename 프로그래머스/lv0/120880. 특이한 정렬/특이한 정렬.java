@@ -17,9 +17,16 @@ class Solution {
         }
         
         Arrays.sort(cal); //오름차순 정렬
+        
+        // 배열을 내림차순으로 뒤집기
+        List<Double> calList = new ArrayList<>();
+        for (double value : cal) {
+            calList.add(value);
+        }
+        Collections.reverse(calList);
             
         for(int i = 0 ; i < numlist.length ; i++){
-            if(cal[i] % 1 != 0) answer[i] =  n - (int)cal[i];
+            if(cal[i] % 1 != 0) answer[i] =  n - (int)cal[i]; //cal의 값이 실수인경우
             else answer[i] = (int)cal[i] + n;
         }
         
